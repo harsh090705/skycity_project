@@ -8,7 +8,6 @@ env/
 .env
 
 # Data and Models (Keep the structure, ignore the actual heavy files)
-data/*.csv
 models/*.pkl
 models/*.json
 models/*.png
