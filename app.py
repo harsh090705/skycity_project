@@ -209,7 +209,7 @@ ORANGE_SCALE = [[0,'#1a0a00'],[0.25,'#7a3000'],[0.5,'#cc5500'],[0.75,'#ff8000'],
 # ── Data loaders ──────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv('data/SkyCity Auckland Restaurants & Bars.csv')
+    df = pd.read_csv('SkyCity Auckland Restaurants & Bars.csv')
     df = build_features(df)
     df['TotalNetProfit'] = (df['InStoreNetProfit'] + df['UberEatsNetProfit'] +
                             df['DoorDashNetProfit'] + df['SelfDeliveryNetProfit'])
